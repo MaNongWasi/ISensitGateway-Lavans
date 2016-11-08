@@ -236,8 +236,12 @@ while true; do
 			response=${response,,}    # tolower
 			if [[ $response =~ ^(yes|y)$ ]]
 			then			
-        sudo echo ${Underline}"Installing requests 2.6.0"$Reset
-        sudo pip install requests==2.6.0
+        #sudo echo ${Underline}"Installing requests 2.6.0"$Reset
+        #sudo pip install requests==2.6.0
+        sudo echo ${Underline}"Installing boto3"$Reset
+        sudo pip install boto3
+        sudo echo ${Underline}"Installing aws command line"$Reset
+        sudo pip install --upgrade awscli
 				module=isensitgw_aws_sender
 				module_dir=$home_dir/$module
 				
@@ -263,8 +267,8 @@ while true; do
 			response=${response,,}    # tolower
 			if [[ $response =~ ^(yes|y)$ ]]
 			then			
-        sudo echo ${Underline}"Installing requests 2.6.0"$Reset
-        sudo pip install requests==2.6.0
+        #sudo echo ${Underline}"Installing requests 2.6.0"$Reset
+        #sudo pip install requests==2.6.0
 				module=isensitgw_noise_sender
 				module_dir=$home_dir/$module
 				
@@ -290,8 +294,8 @@ while true; do
 			response=${response,,}    # tolower
 			if [[ $response =~ ^(yes|y)$ ]]
 			then			
-        sudo echo ${Underline}"Installing requests 2.6.0"$Reset
-        sudo pip install requests==2.6.0
+        #sudo echo ${Underline}"Installing requests 2.6.0"$Reset
+        #sudo pip install requests==2.6.0
 				module=isensitgw_fd_sender
 				module_dir=$home_dir/$module
 				
