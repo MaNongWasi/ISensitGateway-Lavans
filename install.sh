@@ -251,8 +251,8 @@ while true; do
 				sudo echo ${Underline}"Installing aws sender"$Reset
 				sudo chmod +x $module_dir/*
 				sudo python -m compileall $module_dir/$module.py
-				#sudo touch rc.local
-				#sudo echo "sudo $module_dir/loop_$module.sh &" >> rc.local
+				sudo touch rc.local
+				sudo echo "sudo $module_dir/loop_$module.sh &" >> rc.local
 #				sudo rm -rf $module_dir/*.py
 				sudo echo ${GREEN}"Done"
 				sudo echo  $Reset
